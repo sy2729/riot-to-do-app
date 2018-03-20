@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To DO List</title>
+</head>
+<body>
+    <app></app>
+
+    <script type="riot/tag" src="tags/app.tag"></script>
+    <script type="riot/tag" src="tags/todoItem.tag"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.9.0/riot+compiler.min.js"></script>
+    <script>
+        riot.mount("*")
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDSB_NAOipKSoFJ4XzgT4QNMOIvKPo79t0",
+            authDomain: "todolist-f59af.firebaseapp.com",
+            databaseURL: "https://todolist-f59af.firebaseio.com",
+            projectId: "todolist-f59af",
+            storageBucket: "todolist-f59af.appspot.com",
+            messagingSenderId: "228377112675"
+        };
+        firebase.initializeApp(config);
+    </script>
+</body>
+</html>
