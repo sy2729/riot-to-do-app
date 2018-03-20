@@ -12,9 +12,6 @@
     <script type="riot/tag" src="tags/app.tag"></script>
     <script type="riot/tag" src="tags/todoItem.tag"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.9.0/riot+compiler.min.js"></script>
-    <script>
-        riot.mount("*")
-    </script>
 
     <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
     <script>
@@ -28,6 +25,8 @@
             messagingSenderId: "228377112675"
         };
         firebase.initializeApp(config);
+
+        riot.mount("*")
     </script>
 </body>
 </html>
